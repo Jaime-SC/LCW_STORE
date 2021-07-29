@@ -14,10 +14,6 @@
                     <div class="mb-3">
                         <label for="producto-select">Producto</label>
                         <select class="form-select" id="producto-select">
-                            <option value="1">Polera</option>
-                            <option value="4">Pantalon</option>
-                            <option value="2">Chaquetas</option>
-                            <option value="3">Polerones</option>
                         </select>
                     </div>
                     <div class="mb-3">
@@ -78,4 +74,7 @@
     </div>
 
 
+@endsection
+@section('javascript')
+    <script src="{{asset('js/administrar_productos.js')}}"></script>    
 @endsection
