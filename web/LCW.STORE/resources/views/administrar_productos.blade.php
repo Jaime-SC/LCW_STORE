@@ -59,15 +59,20 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <div class="mb-3">
-                                <label for="nombre-txt" class="form-label">Talla</label>
+                            <label for="talla-txt" class="form-label">Talla</label>
+                            <div>
+                                <div class="btn-group " role="group" aria-label="Basic outlined example" id="cantidad-txt">
+                                    <button type="button" class="btn btn-outline-dark"> S </button>
+                                    <button type="button" class="btn btn-outline-primary"> M </button>
+                                    <button type="button" class="btn btn-outline-primary"> L </button>
+                                    <button type="button" class="btn btn-outline-primary"> XL </button>
+                                </div>
                             </div>
-                            <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                <button type="button" class="btn btn-outline-dark"> S </button>
-                                <button type="button" class="btn btn-outline-primary"> M </button>
-                                <button type="button" class="btn btn-outline-primary"> L </button>
-                                <button type="button" class="btn btn-outline-primary"> XL </button>
-                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidad-txt">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidad-txt">
+
                         </div>
                     </div>
                     <div class="card-footer text-center">
@@ -79,30 +84,30 @@
             <div class="col-lg col-md col">
                 <div class="card">
                     <div class="card-header bg-dark bg-gradient text-light">
-                        <span>Listado de Jugadores</span>
+                        <span>Listado de Productos</span>
                     </div>
                     <div class="card-body">
                         <table class="table table-bordered table-hover table-stripped">
                             <thead>
                                 <tr>
                                     <th>Nombre</th>
-                                    <th>Imagen</th>
-                                    <th>Estatura</th>
-                                    <th>Posicion</th>
+                                    <th>Producto</th>
+                                    <th>Talla</th>
+                                    <th>Cantidad</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Tobio Kageyama</td>
-                                    <td>NONE</td>
-                                    <td>180 cm</td>
-                                    <td>Armador</td>
+                                    <td>Polera Blanca</td>
+                                    <td>Polera</td>
+                                    <td>S</td>
+                                    <td>10</td>
                                 </tr>
                                 <tr>
-                                    <td>Shōyō Hinata</td>
-                                    <td>NONE</td>
-                                    <td>162 cm</td>
-                                    <td>Bloqueador Central</td>
+                                    <td>Polera Negra</td>
+                                    <td>Polera</td>
+                                    <td>L</td>
+                                    <td>10</td>
                                 </tr>
                             </tbody>
                         </table>

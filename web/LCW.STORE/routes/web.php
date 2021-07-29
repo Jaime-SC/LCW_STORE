@@ -20,4 +20,4 @@ Route::view("/inventario", "inventario")->name("inventario");
 
 Route::view("/proveedores", "proveedores")->name("proveedores");
 
-Route::view("/envios", "envios")->name("****");@
+Route::view("/envios", "envios")->name("envios");
