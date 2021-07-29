@@ -18,4 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get("tipo/get", [ProductosController::class, "getTipo"]);
+
 Route::get("productos/get", [ProductosController::class, "getProductos"]);
+
+Route::get("productos/post", [ProductosController::class,"crearProducto"]);
