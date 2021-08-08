@@ -9,6 +9,7 @@
                   <td>Producto</td>
                   <td>Talla</td>
                   <td>Cantidad</td>
+                  <td>Acciones</td>
                 </tr>
 
               </thead>
@@ -22,4 +23,9 @@
 
     </div>
 
+@endsection
+
+@section('javascript')
+    <script src="{{asset('js/servicios/productosService.js')}}"></script>
+    <script src="{{asset('js/inventario.js')}}"></script>
 @endsection

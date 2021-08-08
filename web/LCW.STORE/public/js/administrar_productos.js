@@ -26,6 +26,11 @@ const cargarTallas = async()=>{
 };
 cargarTallas();
 
+document.addEventListener("DOMContentLoaded", ()=>{
+    cargarTipos();
+    cargarTallas();
+});
+
 
 
 
@@ -44,7 +49,8 @@ document.querySelector("#registrar-btn").addEventListener("click", async () => {
     //3. el modelo ingresa a la base de datos
     //4. Todos felices
     let res = await crearProducto(producto);
-    Swal.fire('Producto Creado','Creada exitosamente','success');
+    await Swal.fire('Producto Creado','Creada exitosamente','success');
+    window.location.href = "inventario";
 
 
 
