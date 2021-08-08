@@ -7,31 +7,44 @@ use App\Models\Producto;
 
 class ProductosController extends Controller
 {
-    public function getTipo(){
+    public function getTipos(){
        //  $productos = ["Polera","Pantalon","Chaqueta","Polerones"]
-        $tipo = array();
-        $tipo[] = "Polera";
-        $tipo[] = "Pantalon";
-        $tipo[] = "Chaqueta";
-        $tipo[] = "Polerones";
+        $tipos = array();
+        $tipos[] = "Polera";
+        $tipos[] = "Pantalon";
+        $tipos[] = "Chaqueta";
+        $tipos[] = "Polerones";
 
-        return $tipo;
+        return $tipos;
+    
 
     }
 
+    public function getTallas(){
+        $tallas = array();
+        $tallas[] = "S";
+        $tallas[] = "M";
+        $tallas[] = "L";
+        $tallas[] = "XL";
+
+        return $tallas;
+    }
+
+        
     public function getProductos(){
 
         $productos = Producto::all();
         return $productos;
     }
 
-    public function crearProducto(){
-
+    public function crearProducto(Request $request){
+        $input = $request->all();
         $producto = new Producto();
-        $producto->nombre = "polera blanca";
-        $producto->producto = "polera";
-        $producto->talla = "L";
-        $producto->cantidad = 10;
+        $producto->nombre = $input["nombre"];
+        $producto->tipo = $input["tipo"];
+        $producto->talla = $input["talla"];
+        $producto->cantidad = $input["cantidad"];
         $producto->save();
+        return $producto;
     }
 }
