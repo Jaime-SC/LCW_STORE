@@ -26,3 +26,4 @@ Route::get("tallas/get", [ProductosController::class, "getTallas"]);
 Route::get("productos/get", [ProductosController::class, "getProductos"]);
 
 Route::post("productos/post", [ProductosController::class, "crearProducto"]);
+Route::post("productos/delete", [ProductosController::class, "eliminarProducto"]);

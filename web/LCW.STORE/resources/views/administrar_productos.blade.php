@@ -25,7 +25,7 @@
                     </div>
                     <button type="button" id="registrar-btn" class="ms-3 btn btn-outline-success">Registrar</button>
                     <button type="button" class="ms-3 btn btn-outline-danger">Borrar</button>
-            </div>
+                </div>
             </div>
         </div>
         <div class="col-lg col-md col">
@@ -41,21 +41,11 @@
                                 <th>Producto</th>
                                 <th>Talla</th>
                                 <th>Cantidad</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Polera Blanca</td>
-                                <td>Polera</td>
-                                <td>S</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>Polera Negra</td>
-                                <td>Polera</td>
-                                <td>L</td>
-                                <td>10</td>
-                            </tr>
+                        <tbody id="tbody-inventario">
+
                         </tbody>
                     </table>
                 </div>

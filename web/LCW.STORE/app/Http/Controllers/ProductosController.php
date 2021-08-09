@@ -47,4 +47,18 @@ class ProductosController extends Controller
         $producto->save();
         return $producto;
     }
+
+    public function eliminarProducto(Request $request){
+        $input = $request->all();
+        $id = $input["id"];
+        //Eloquent: El administrador de BD de Laravel se llama Eloquent
+        //1. Ir a buscar el registro bd
+        $producto = Producto::findOrFail($id);
+        //2. Para eliminar llamo al metodo delete
+        $producto->delete(); //DELETE FROM productos WHERE id=1
+        return "ok";
+        
+
+    }
 }
+
