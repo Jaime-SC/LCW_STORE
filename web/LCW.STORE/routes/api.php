@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\ProveedoresController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,11 +21,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get("tipos/get", [ProductosController::class, "getTipos"]);
-
 Route::get("tallas/get", [ProductosController::class, "getTallas"]);
-
-
 Route::get("productos/get", [ProductosController::class, "getProductos"]);
+Route::get("regiones/get", [ProveedoresController::class, "getRegiones"]);
 
 Route::post("productos/post", [ProductosController::class, "crearProducto"]);
 Route::post("productos/delete", [ProductosController::class, "eliminarProducto"]);

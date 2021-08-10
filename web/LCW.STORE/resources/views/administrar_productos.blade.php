@@ -24,7 +24,6 @@
                         <input type="number" class="form-control" id="cantidad-txt">
                     </div>
                     <button type="button" id="registrar-btn" class="ms-3 btn btn-outline-success">Registrar</button>
-                    <button type="button" class="ms-3 btn btn-outline-danger">Borrar</button>
                 </div>
             </div>
         </div>

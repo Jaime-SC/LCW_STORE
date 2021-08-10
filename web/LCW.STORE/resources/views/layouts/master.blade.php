@@ -29,7 +29,6 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                         <a class="nav-link" href="{{ route('administrar_productos') }}">Productos</a>
-                        <a class="nav-link" href="{{ route('inventario') }}">Inventario</a>
                         <a class="nav-link" href="{{ route('proveedores') }}">Proveedores</a>
                         <a class="nav-link" href="{{ route('envios') }}">Envios</a>
                     </div>

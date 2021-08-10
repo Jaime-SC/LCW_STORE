@@ -61,6 +61,7 @@ const cargarTabla = (productos) => {
     for (let i = 0; i < productos.length; ++i) {
         //3. Por cada producto generar una fila
         let tr = document.createElement("tr");
+        
         //4. Generar por cada atributo de la consola, un td
 
         let tdNombre = document.createElement("td");
